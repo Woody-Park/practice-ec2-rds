@@ -1,25 +1,18 @@
 {
-  "name": "zerocho",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "learn-sequelize",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
-    "cors": "^2.8.5",
-    "debug": "^4.1.1",
-    "express": "^4.17.1",
-    "http-errors": "^1.7.3",
+    "debug": "~2.6.9",
+    "express": "^4.16.4",
+    "http-errors": "~1.6.2",
     "morgan": "^1.9.1",
-    "mysql2": "^2.1.0",
-    "pug": "^2.0.4",
-    "request": "^2.88.2",
-    "sequelize": "^5.21.5",
-    "sequelize-cli": "^5.5.1"
+    "mysql2": "^1.6.5",
+    "pug": "^2.0.3",
+    "sequelize": "^4.44.4"
   }
 }

@@ -1,17 +1,17 @@
-const express = require("express");
-const User = require('../models').User;
+var express = require('express');
+var User = require('../models').User;
 
-const router = express.Router();
+var router = express.Router();
 
-router.get('/' , function(req, res, next){
-    User.findAll()
+router.get('/', function(req, res, next) {
+  User.findAll()
     .then((users) => {
-        res.render('sequelize' , { users });
+      res.render('sequelize', { users });
     })
-    .catch((err)=> {
-        console.error(err);
-        next(err);
-    })
+    .catch((err) => {
+      console.error(err);
+      next(err);
+    });
 });
 
 module.exports = router;
